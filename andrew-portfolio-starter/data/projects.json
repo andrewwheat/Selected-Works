@@ -1,0 +1,72 @@
+{
+  "title": "Selected Works",
+  "subtitle": "Architecture, research, and drawings. 2024\u20132025.",
+  "name": "Andrew Wheat",
+  "projects": [
+    {
+      "slug": "food-pantry",
+      "title": "Enfield Food Pantry",
+      "year": "2025",
+      "location": "Enfield, NY",
+      "typology": [
+        "Academic"
+      ],
+      "roles": [
+        "Design"
+      ],
+      "cover": "./images/food-pantry/cover.jpg",
+      "images": [
+        {
+          "src": "./images/food-pantry/1.jpg",
+          "cap": "Plan study"
+        },
+        {
+          "src": "./images/food-pantry/2.jpg",
+          "cap": "Model detail"
+        }
+      ],
+      "description": "An undulating single-story campus balancing privacy and openness.",
+      "corpse": {
+        "start": 12,
+        "size": 16
+      }
+    },
+    {
+      "slug": "aquatic",
+      "title": "Aquatic Center at the Skate Park",
+      "year": "2025",
+      "location": "Ithaca, NY",
+      "typology": [
+        "Academic"
+      ],
+      "roles": [
+        "Design",
+        "Research"
+      ],
+      "cover": "./images/aquatic/cover.jpg",
+      "images": [
+        {
+          "src": "./images/aquatic/1.jpg",
+          "cap": "Site massing model"
+        },
+        {
+          "src": "./images/aquatic/2.jpg",
+          "cap": "Pool hall interior"
+        }
+      ],
+      "description": "A community aquatic center mediating between skate park and senior housing.",
+      "corpse": {
+        "start": 18,
+        "size": 14
+      }
+    }
+  ],
+  "corpsePlaceholders": [
+    "./images/placeholders/plan-1.jpg",
+    "./images/placeholders/plan-2.jpg",
+    "./images/placeholders/plan-3.jpg",
+    "./images/placeholders/plan-4.jpg",
+    "./images/placeholders/plan-5.jpg",
+    "./images/placeholders/plan-6.jpg"
+  ]
+}

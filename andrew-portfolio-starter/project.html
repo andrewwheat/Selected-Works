@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Project — Andrew Wheat</title><link rel="stylesheet" href="./css/styles.css"/></head><body>
+<header><div class="container bar"><a class="brand" href="./index.html">Andrew Wheat</a><nav>
+<a href="./index.html">Works</a><a href="./about.html">About</a><button class="toggle" id="modeBtn">Mode</button>
+</nav></div></header>
+<main class="container"><h1 id="pTitle">Project Title</h1>
+<div class="carousel"><div class="track" id="pTrack"></div></div>
+<div class="info"><div id="pMeta" style="color:var(--muted)"></div><p id="pText"></p></div></main>
+<footer><div class="container"><p>© <span id="year"></span> Andrew Wheat</p></div></footer>
+<script src="./data/projects.json" type="application/json" id="projectsData"></script>
+<script>
+const data = JSON.parse(document.getElementById('projectsData').textContent);
+const params = new URLSearchParams(location.search);
+const slug = params.get('slug');
+const p = data.projects.find(x=>x.slug===slug) || data.projects[0];
+document.getElementById('pTitle').textContent = p.title;
+document.getElementById('pText').textContent  = p.description || '';
+document.getElementById('pMeta').textContent  = [p.location, p.year].filter(Boolean).join(' · ');
+document.getElementById('year').textContent = new Date().getFullYear();
+const track = document.getElementById('pTrack');
+track.innerHTML = (p.images||[]).map(i=>`<div class="slide"><img src="${i.src}" alt="${i.cap||p.title}"></div>`).join('');
+</script>
+<script src="./js/app.js"></script></body></html>

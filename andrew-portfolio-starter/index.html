@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Andrew Wheat — Portfolio</title><link rel="stylesheet" href="./css/styles.css"/></head><body>
+<header><div class="container bar"><a class="brand" href="./index.html">Andrew Wheat</a><nav>
+<a href="./index.html">Works</a><a href="./about.html">About</a><button class="toggle" id="modeBtn">Mode</button>
+</nav></div></header>
+<main>
+<section class="container"><h1>Cadavre Exquis</h1><p>A stitched table of contents. Click any slice to open a project.</p></section>
+<section class="corpse" id="corpse"></section>
+<section class="container"><h2 style="margin-top:24px;">Projects</h2><div class="grid" id="workGrid"></div></section>
+</main>
+<footer><div class="container"><p>© <span id="year"></span> Andrew Wheat</p></div></footer>
+<dialog id="project"><form method="dialog"><button class="toggle" style="position:absolute;right:12px;top:12px;">Close</button></form>
+<div class="modal"><div class="carousel"><div class="track" id="carTrack"></div></div>
+<div class="info"><h3 id="projTitle">Title</h3><div id="projMeta" style="color:var(--muted)"></div><p id="projText"></p></div></div></dialog>
+<script src="./data/projects.json" type="application/json" id="projectsData"></script><script src="./js/app.js"></script>
+</body></html>
